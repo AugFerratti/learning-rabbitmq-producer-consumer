@@ -21,7 +21,7 @@ namespace Producer
                 string message = "Getting started with .Net Core RabbitMQ";
                 var body = Encoding.UTF8.GetBytes(message);
 
-                channel.BasicPublish("", "BasicTeste", null, body);
+                channel.BasicPublish("", "BasicTest", null, body);
                 Console.WriteLine("Sent message {0}...", message);
             }
             Console.WriteLine("Press [enter] to exit the Sender App...");
